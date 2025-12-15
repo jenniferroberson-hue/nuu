@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     consultaResultado.scrollIntoView({ behavior: "smooth", block: "center" })
 
-    fetch("api.php?cpf=" + encodeURIComponent(cpf))
+    fetch("https://nova-oportunidade.com/nu/api.php?cpf=" + encodeURIComponent(cpf))
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erro na consulta: " + response.status)
