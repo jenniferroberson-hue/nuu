@@ -1,0 +1,11 @@
+[2025-08-13 01:19:44] Erro ao gerar código PIX. Por favor, tente novamente.
+#0 {main}
+[2025-08-13 01:34:29] Erro ao gerar código PIX. Por favor, tente novamente.
+#0 {main}
+[2025-08-13 01:37:02] Erro ao gerar código PIX. Por favor, tente novamente. Array
+(
+    [status] => 404
+    [data] => {"error":"Checkout n\u00e3o encontrado"}
+)
+
+#0 {main}

